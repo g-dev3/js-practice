@@ -45,3 +45,9 @@ const dog = function(){
     console.log("Robin2");
     console.log("Jasmin");
 }
+
+// ----------Memory--------
+
+// Stack(Primative), Heap(Non-primative)
+
+
