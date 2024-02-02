@@ -27,7 +27,7 @@ const result = addTwoNumbers(6,3);
 
 // console.log("result",result);
 
-function loginUsermessage(username){
+function loginUsermessage(username = "gdev"){
     // if(username===undefined){
     //     console.log("please enter a userName");
     //     return
@@ -41,4 +41,4 @@ function loginUsermessage(username){
     return `${username} just logged in`
 }
 // console.log(loginUsermessage("G Dev"));
-console.log(loginUsermessage());
+console.log(loginUsermessage("g developer"));
