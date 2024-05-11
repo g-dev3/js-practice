@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom with chai or code</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    const listItem = document.querySelector(".language")
+    // const list = document.createElement("li")
+    // listItem.appendChild(list)
+    // const listText = document.createTextNode("Html")
+
+    // list.appendChild(listText)
+
+    // document.appendChild(list)
+
+
+    function addLanguage(langName) {
+        const li = document.createElement("li")
+        li.innerHTML = `${langName}`
+        // document.querySelector(".language").appendChild(li)
+        listItem.appendChild(li)
+    }
+
+    function addOptiLang(language) {
+        const li = document.createElement("li")
+        li.appendChild(document.createTextNode(language))
+        document.querySelector(".language").appendChild(li)
+
+    }
+    addLanguage("Css")
+    addLanguage("Html")
+    addLanguage("React js")
+
+    addOptiLang("Python")
+    addOptiLang("Django")
+    addOptiLang("C")
+
+    // Edit 
+
+    const firstLang = document.querySelector("li:first-child")
+    const thirdLang = document.querySelector("li:nth-child(3)")
+    const newli = document.createElement("li")
+    const thirdli = document.createElement("li")
+    newli.textContent = "Html"
+    thirdli.textContent = "JavaScript"
+    firstLang.replaceWith(newli)
+    thirdLang.replaceWith(thirdli)
+
+    // remove 
+
+    const lastLang = document.querySelector("li:last-child")
+    lastLang.remove()
+</script>
+
+</html>
