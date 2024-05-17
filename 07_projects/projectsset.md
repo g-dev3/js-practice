@@ -6,7 +6,7 @@
 
 # solution code
 
-## project 1
+## project 1 Solution
 
 ```javascript
 const form = document.querySelector("form");
@@ -36,7 +36,7 @@ form.addEventListener("submit", (e) => {
 });
 ```
 
-## Project 2
+## Project 2 Solution
 
 ```javascript
 const form = document.querySelector("form");
@@ -58,4 +58,15 @@ form.addEventListener("submit", (e) => {
     results.innerHTML = `<span>${bmi}</span>`;
   }
 });
+```
+
+## Project 3 Solution
+
+```javascript
+const clock = document.querySelector("#clock");
+
+setInterval(() => {
+  let date = new Date().toLocaleTimeString();
+  clock.innerHTML = date;
+}, 1000);
 ```
